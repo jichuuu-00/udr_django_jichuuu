@@ -20,7 +20,7 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-SECRET_KEY = 'django-insecure-!qb%a*xx^@1lmc^f!2$niz2)@-^0jh^ry_hih##6#&ol5(9=l)'
+SECRET_KEY = env('SECRET_KEY')
 
 # Set the project base directory
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
